@@ -3,13 +3,22 @@
     "name": "PlayerInput",
     "maps": [
         {
-            "name": "Move",
+            "name": "Valdrek",
             "id": "db01e787-33b0-4e64-a52e-953aa75603d7",
             "actions": [
                 {
                     "name": "Move",
                     "type": "Value",
                     "id": "e57db686-0207-44ea-a7e7-14cf66b7676d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Fire",
+                    "type": "Button",
+                    "id": "176ced8f-c170-4702-ae87-9da5e319f571",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -71,6 +80,17 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "5d89aa8a-6e57-4e5d-a7f4-fd07ad48742e",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
