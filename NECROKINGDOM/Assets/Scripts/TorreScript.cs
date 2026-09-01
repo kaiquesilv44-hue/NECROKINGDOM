@@ -8,9 +8,10 @@ public class TorreScript : MonoBehaviour
 {
     public GameObject TorreProjetil;
     public GameObject LocalTorreProjetil;
-    public bool Cooldown = true;
+    private bool Cooldown = true;
     private float MenorDistancia = math.INFINITY;
     public Transform Alvo;
+    public float CoolDown = 5f;
 
 
     private List<Transform> Inimigos = new List<Transform> ();
@@ -56,7 +57,7 @@ public class TorreScript : MonoBehaviour
 
     IEnumerator cooldown()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(CoolDown);
         Cooldown = true;
     }
 }
