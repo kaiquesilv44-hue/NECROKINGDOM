@@ -15,6 +15,7 @@ public class InimigoScript : MonoBehaviour
     };
 
     public float velocidade = 5f;
+    public float Vida; 
     private int indiceAtual = 0;
 
     void Update()
