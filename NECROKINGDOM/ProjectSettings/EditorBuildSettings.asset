@@ -23,6 +23,15 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/Configura\xE7\xF5es.unity"
     guid: 9d23c62837e25a3489a81c5c06b6be76
+  - enabled: 1
+    path: Assets/Scenes/Mundo2.unity
+    guid: e2054486cda188742b027142fa89c5f1
+  - enabled: 1
+    path: Assets/Scenes/Mundo3.unity
+    guid: b506032ec30ea8b42adf8395e30a3f99
+  - enabled: 1
+    path: Assets/Scenes/Mundo1.unity
+    guid: 68a59f1ea7991b04ea8c3840c04d92a2
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
