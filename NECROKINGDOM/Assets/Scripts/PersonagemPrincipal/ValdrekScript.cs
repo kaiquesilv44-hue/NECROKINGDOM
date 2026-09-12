@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 public class ValdrekScript : MonoBehaviour
@@ -22,7 +23,7 @@ public class ValdrekScript : MonoBehaviour
 
     public void Atirando(InputAction.CallbackContext context)
     {
-        if (!context.performed) return;
+        if (!context.performed || EventSystem.current.IsPointerOverGameObject()) return;
         Instantiate(Projetil, LocalProjetil.transform.position, LocalProjetil.transform.rotation);
     }
 }
