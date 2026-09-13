@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -9,6 +11,8 @@ public class ValdrekScript : MonoBehaviour
     public GameObject LocalProjetil;
     public float speed = 5f;
     private Vector2 moveInput;
+    private bool canFire = true;
+    public float FireCooldown = 0.5f;
 
     public void OnMove(InputAction.CallbackContext context)
     {
@@ -23,7 +27,18 @@ public class ValdrekScript : MonoBehaviour
 
     public void Atirando(InputAction.CallbackContext context)
     {
-        if (!context.performed || EventSystem.current.IsPointerOverGameObject()) return;
-        Instantiate(Projetil, LocalProjetil.transform.position, LocalProjetil.transform.rotation);
+        if (Time.timeScale >= 1 && canFire)
+        {
+            if (!context.performed || EventSystem.current.IsPointerOverGameObject()) return;
+            Instantiate(Projetil, LocalProjetil.transform.position, LocalProjetil.transform.rotation);
+            canFire = false;
+            StartCoroutine(ResetFire());
+        }
+    }
+
+    IEnumerator ResetFire()
+    {
+        yield return new WaitForSeconds(FireCooldown);
+        canFire = true;
     }
 }

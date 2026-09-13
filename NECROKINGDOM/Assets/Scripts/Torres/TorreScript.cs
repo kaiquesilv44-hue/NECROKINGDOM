@@ -32,7 +32,7 @@ public class TorreScript : MonoBehaviour
                 }
             }
             GameObject proj = Instantiate(TorreProjetil, LocalTorreProjetil.transform.position, LocalTorreProjetil.transform.rotation);
-            proj.GetComponent<ProjetilValdrekScript>().Alvo = Alvo;
+            //proj.GetComponent<ProjetilValdrekScript>().Alvo = Alvo;
             Cooldown = false;
             StartCoroutine(cooldown());
         }

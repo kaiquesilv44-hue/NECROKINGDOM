@@ -158,7 +158,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   caminho: []
-  velocidade: 5
+  velocidade: 3
+  Vida: 15
+  Escudo: 0
+  Almas: 5
+  NomeInimigo: Guerreiro
+  Incremento: 0
 --- !u!50 &-7752579939353159960
 Rigidbody2D:
   serializedVersion: 5
@@ -185,4 +190,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4

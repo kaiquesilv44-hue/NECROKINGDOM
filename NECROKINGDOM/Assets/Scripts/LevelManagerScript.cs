@@ -14,13 +14,19 @@ public class LevelManagerScript : MonoBehaviour
     public int Almas;
     public bool Pausado = false;
     public bool x2Ativado = false;
+    public GameObject MenuPausa;
+    public GameObject MenuVitoria;
+    public GameObject MenuDerrota;
 
 
     private void Start()
     {
+        Time.timeScale = 1f;
         Vida = 10;
         Almas = 0;
         BarraDeOnda.fillAmount = 0;
+        MenuVitoria.SetActive(false);
+        MenuPausa.SetActive(false);
     }
 
     private void Update()
@@ -28,9 +34,27 @@ public class LevelManagerScript : MonoBehaviour
         VidaText.text = "Vida: " + Vida.ToString();
         AlmasText.text = "Almas: " + Almas.ToString();
         BarraDeOnda.fillAmount = BarraAtual;
+
+
         if(BarraAtual == 1f)
         {
+            MenuVitoria.SetActive(true);
+            Time.timeScale = 0f;
+        }
 
+        if (Vida <= 0)
+        {
+            Time.timeScale = 0f;
+            MenuDerrota.SetActive(true);
+        }
+
+        if (Pausado)
+        {
+            MenuPausa.SetActive(true);
+        }
+        else
+        {
+            MenuPausa.SetActive(false);
         }
     }
 

@@ -8,6 +8,8 @@ public class CaminhoInimigo : MonoBehaviour
     public float velocidade = 3f;
     public float Vida = 20f;
     public float Escudo = 0f;
+    public int Almas = 5;
+    public string NomeInimigo;
 
     public float Incremento;
 
@@ -22,14 +24,68 @@ public class CaminhoInimigo : MonoBehaviour
         {
             indiceAtual++; 
         }
+
+        if (Vida <= 0)
+        {
+            Destroy(gameObject);
+        }
+
+        switch (NomeInimigo)
+        {
+            case "Mago":
+                Mago();
+                break;
+            case "Bardo":
+                Bardo();
+                break;
+            case "Barbaro":
+                Barbaro();
+                break;
+            case "Ladino":
+                Ladino();
+                break;
+        }
     }
+
+    public void ReceberDano(float dano)
+    {
+        dano -= Escudo;
+        Vida -= dano;
+    }
+
+    private void Mago()
+    {
+
+    }
+
+    private void Bardo()
+    {
+
+    }
+
+    private void Barbaro()
+    {
+        if (Vida <= 8 && NomeInimigo == "Barbaro")
+        {
+            velocidade = 6.5f;
+            Escudo = 1f;
+        }
+    }
+
+    private void Ladino()
+    {
+
+    }
+
+
 
     private void OnDestroy()
     {
         LevelManagerScript Manager = FindAnyObjectByType<LevelManagerScript>();
         InimigoSpawner Spawner = FindAnyObjectByType<InimigoSpawner>();
         Manager.BarraAtual += Incremento;
-        if(Manager.BarraAtual >= 0.249 && Manager.BarraAtual <= 0.250001)
+        Manager.Almas += Almas;
+        if (Manager.BarraAtual >= 0.249 && Manager.BarraAtual <= 0.250001)
         {
             Manager.BarraAtual = 0.25f;
             Spawner.StartCoroutine(Spawner.TempoEntreOndas());
@@ -44,7 +100,7 @@ public class CaminhoInimigo : MonoBehaviour
             Manager.BarraAtual = 0.75f;
             Spawner.StartCoroutine(Spawner.TempoEntreOndas());
         }
-        if (Manager.BarraAtual >= 0.9)
+        if (Manager.BarraAtual >= 0.999 && Manager.BarraAtual <= 1.00001)
         {
             Manager.BarraAtual = 1f;
         }
