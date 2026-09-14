@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class BotaoScript : MonoBehaviour
 {
     public int Botao;
+    
 
     public void Click()
     {
@@ -25,4 +26,6 @@ public class BotaoScript : MonoBehaviour
                 break;
         }
     }
+
+   
 }

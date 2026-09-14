@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class ProjetilValdrekScript : MonoBehaviour
 {
-    public Transform Alvo;
     public float Velocidade = 5f;
+    public float Dano = 3f;
 
 
     private void Start()
@@ -13,18 +13,15 @@ public class ProjetilValdrekScript : MonoBehaviour
 
     void Update()
     {
-        Vector3 direcao = (Alvo.position - transform.position).normalized;
-
-        Vector3 movimento = (direcao * Velocidade * Time.deltaTime);
-
-        transform.Translate(movimento);
+        transform.Translate(Vector3.up * Velocidade * Time.deltaTime);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Inimigo"))
         {
             Destroy(gameObject);
+            collision.gameObject.GetComponent<CaminhoInimigo>().ReceberDano(Dano);
         }
     }
 }
