@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 [System.Serializable]
@@ -44,6 +45,7 @@ public class InimigoSpawner : MonoBehaviour
     public int QuantidadeInimigosOndaBoss;
     public float tempoEntreOndas = 15f;
     public float tempoEntreInimigos = 1f;
+    public TextMeshProUGUI Temporizador;
     public List<Onda1> InimigosOnda1;
     public List<Onda2> InimigosOnda2;
     public List<Onda3> InimigosOnda3;
@@ -51,7 +53,7 @@ public class InimigoSpawner : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(SpawnarOnda1());
+        StartCoroutine(temporizador());
     }
 
     IEnumerator SpawnarOnda1()
@@ -138,13 +140,31 @@ public class InimigoSpawner : MonoBehaviour
         {
             case 0.25f:
                 StartCoroutine(SpawnarOnda2());
+                StartCoroutine(temporizador());
                 break;
             case 0.5f:
                 StartCoroutine(SpawnarOnda3());
+                StartCoroutine(temporizador());
                 break;
             case 0.75f:
                 StartCoroutine(SpawnarOndaBoss());
+                StartCoroutine(temporizador());
                 break;
+        }
+    }
+
+   public IEnumerator temporizador()
+    {
+        Temporizador.gameObject.SetActive(true);
+        for (int i = 15; i >= 0; i--)
+        {
+            Temporizador.text = "Inimigos Chegarão em: " + i.ToString();
+            yield return new WaitForSeconds(1f);
+        }
+        Temporizador.gameObject.SetActive(false);
+        if(FindAnyObjectByType<LevelManagerScript>().BarraAtual <= 0.25f)
+        {
+            StartCoroutine(SpawnarOnda1());
         }
     }
 }

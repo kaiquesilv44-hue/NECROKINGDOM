@@ -7,11 +7,12 @@ TagManager:
   - Inimigo
   - Torre
   - Objetivo
+  - Arrastavel
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ponto de torre
   - Water
   - UI
   - 
