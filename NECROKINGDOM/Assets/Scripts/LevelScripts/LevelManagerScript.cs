@@ -21,17 +21,21 @@ public class LevelManagerScript : MonoBehaviour
     public bool Removido = false;
     public bool Posicionando = false;
     public List<GameObject> SlotDeTorre = new List<GameObject>();
+    public List<GameObject> SlotDeArmadilha = new List<GameObject>();
 
 
     private void Start()
     {
         Time.timeScale = 1f;
         Vida = 10;
-        Almas = 0;
         BarraDeOnda.fillAmount = 0;
         MenuVitoria.SetActive(false);
         MenuPausa.SetActive(false);
         foreach (GameObject slot in SlotDeTorre)
+        {
+            slot.SetActive(false);
+        }
+        foreach (GameObject slot in SlotDeArmadilha)
         {
             slot.SetActive(false);
         }
@@ -40,9 +44,14 @@ public class LevelManagerScript : MonoBehaviour
     private void Update()
     {
         SlotDeTorre.RemoveAll(slot => slot == null);
+        SlotDeArmadilha.RemoveAll(slot => slot == null);
         if (Posicionando)
         {
             foreach (GameObject slot in SlotDeTorre)
+            {
+                slot.SetActive(true);
+            }
+            foreach (GameObject slot in SlotDeArmadilha)
             {
                 slot.SetActive(true);
             }
@@ -53,10 +62,14 @@ public class LevelManagerScript : MonoBehaviour
             {
                 slot.SetActive(false);
             }
+            foreach (GameObject slot in SlotDeArmadilha)
+            {
+                slot.SetActive(false);
+            }
         }
 
-        VidaText.text = "Vida: " + Vida.ToString();
-        AlmasText.text = "Almas: " + Almas.ToString();
+        VidaText.text = Vida.ToString();
+        AlmasText.text = Almas.ToString();
         BarraDeOnda.fillAmount = BarraAtual;
 
 

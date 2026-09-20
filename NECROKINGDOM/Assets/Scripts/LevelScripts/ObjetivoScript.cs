@@ -6,7 +6,7 @@ public class ObjetivoScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Inimigo"))
+        if (other.CompareTag("Inimigo") || other.CompareTag("Ladino"))
         {
             Manager.GetComponent<LevelManagerScript>().Vida--;
             Destroy(other.gameObject, 2f);

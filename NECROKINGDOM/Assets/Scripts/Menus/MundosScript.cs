@@ -6,9 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class MundosScript : MonoBehaviour
 {
+    SpriteRenderer sr;
     public bool CanClick = true;
     public int Mundo;
     public string MundoName;
+
+    private void Start()
+    {
+        sr = GetComponent<SpriteRenderer>();
+    }
 
     public void PlayButton()
     {
@@ -85,7 +91,8 @@ public class MundosScript : MonoBehaviour
         {
             Velo = 13f;
         }
-        Vector3 Scale = new Vector3(3f, 4.8f, 1f);
+        sr.sortingOrder = 4;
+        Vector3 Scale = new Vector3(1f, 0.8f, 1f);
         Vector3 Position = new Vector3(-5.5f, 1f, 0f);
 
         while (transform.localScale != Scale || transform.position != Position)
@@ -98,8 +105,9 @@ public class MundosScript : MonoBehaviour
 
     IEnumerator Mundo2()
     {
+        sr.sortingOrder = 5;
         float Velo = 6.5f;
-        Vector3 Scale = new Vector3(3.5f, 5.5f, 1f);
+        Vector3 Scale = new Vector3(1.2f, 1f, 1f);
         Vector3 Position = new Vector3(0f, 0f, 0f);
 
         while (transform.localScale != Scale || transform.position != Position)
@@ -117,7 +125,8 @@ public class MundosScript : MonoBehaviour
         {
             Velo = 13f;
         }
-        Vector3 Scale = new Vector3(3f, 4.8f, 1f);
+        sr.sortingOrder = 4;
+        Vector3 Scale = new Vector3(1f, 0.8f, 1f);
         Vector3 Position = new Vector3(5.5f, 1f, 0f);
 
         while (transform.localScale != Scale || transform.position != Position)

@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 2022358b4ac855b45abd70c26ad6929f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a3d084d816c7b92489cf5654177c3d1f, type: 3}
   m_Color: {r: 0.60188675, g: 1, b: 0.6038168, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -132,7 +132,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 15.36, y: 10.24}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -163,6 +163,7 @@ MonoBehaviour:
   Escudo: 1
   Almas: 5
   NomeInimigo: Bardo
+  Particulas: {fileID: 0}
   Incremento: 0
 --- !u!50 &-2436652013356090041
 Rigidbody2D:

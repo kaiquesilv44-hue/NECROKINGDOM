@@ -26,7 +26,7 @@ public class TorreProjetilScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Inimigo"))
+        if (collision.gameObject.CompareTag("Inimigo") || collision.CompareTag("Ladino"))
         {
             Destroy(gameObject);
             collision.gameObject.GetComponent<CaminhoInimigo>().ReceberDano(Dano);

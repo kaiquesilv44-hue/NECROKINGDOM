@@ -149,6 +149,7 @@ GameObject:
   - component: {fileID: 5627412986861019606}
   - component: {fileID: 756633397612767364}
   - component: {fileID: 8306769928161138514}
+  - component: {fileID: -1369828170406494895}
   m_Layer: 0
   m_Name: Valdrek
   m_TagString: Untagged
@@ -219,14 +220,14 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 3
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 9070114421680214784, guid: 22874edd896cd2545bdc5cdce90a40f4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b6a0701a3d854074290c9523aad585e4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 12.54, y: 12.54}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -340,8 +341,39 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 176ced8f-c170-4702-ae87-9da5e319f571
     m_ActionName: 'Valdrek/Fire[/Mouse/leftButton]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 69338ef3-f7f4-4520-8207-76a431b6382b
+    m_ActionName: 'Torres/Gerar[/Mouse/leftButton]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Valdrek
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!50 &-1369828170406494895
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6730472105147399977}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

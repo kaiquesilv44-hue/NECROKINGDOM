@@ -93,6 +93,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Torres",
+            "id": "78ef4eea-1040-42d6-81ce-e79e552dced8",
+            "actions": [
+                {
+                    "name": "Gerar",
+                    "type": "Button",
+                    "id": "69338ef3-f7f4-4520-8207-76a431b6382b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a564fca9-7739-4dfa-8925-c8a3be34fda4",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Gerar",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

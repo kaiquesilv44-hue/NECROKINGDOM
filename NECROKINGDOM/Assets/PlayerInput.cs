@@ -179,6 +179,34 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Torres"",
+            ""id"": ""78ef4eea-1040-42d6-81ce-e79e552dced8"",
+            ""actions"": [
+                {
+                    ""name"": ""Gerar"",
+                    ""type"": ""Button"",
+                    ""id"": ""69338ef3-f7f4-4520-8207-76a431b6382b"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""a564fca9-7739-4dfa-8925-c8a3be34fda4"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Gerar"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -187,11 +215,15 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         m_Valdrek = asset.FindActionMap("Valdrek", throwIfNotFound: true);
         m_Valdrek_Move = m_Valdrek.FindAction("Move", throwIfNotFound: true);
         m_Valdrek_Fire = m_Valdrek.FindAction("Fire", throwIfNotFound: true);
+        // Torres
+        m_Torres = asset.FindActionMap("Torres", throwIfNotFound: true);
+        m_Torres_Gerar = m_Torres.FindAction("Gerar", throwIfNotFound: true);
     }
 
     ~@PlayerInput()
     {
         UnityEngine.Debug.Assert(!m_Valdrek.enabled, "This will cause a leak and performance issues, PlayerInput.Valdrek.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_Torres.enabled, "This will cause a leak and performance issues, PlayerInput.Torres.Disable() has not been called.");
     }
 
     /// <summary>
@@ -370,6 +402,102 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     /// Provides a new <see cref="ValdrekActions" /> instance referencing this action map.
     /// </summary>
     public ValdrekActions @Valdrek => new ValdrekActions(this);
+
+    // Torres
+    private readonly InputActionMap m_Torres;
+    private List<ITorresActions> m_TorresActionsCallbackInterfaces = new List<ITorresActions>();
+    private readonly InputAction m_Torres_Gerar;
+    /// <summary>
+    /// Provides access to input actions defined in input action map "Torres".
+    /// </summary>
+    public struct TorresActions
+    {
+        private @PlayerInput m_Wrapper;
+
+        /// <summary>
+        /// Construct a new instance of the input action map wrapper class.
+        /// </summary>
+        public TorresActions(@PlayerInput wrapper) { m_Wrapper = wrapper; }
+        /// <summary>
+        /// Provides access to the underlying input action "Torres/Gerar".
+        /// </summary>
+        public InputAction @Gerar => m_Wrapper.m_Torres_Gerar;
+        /// <summary>
+        /// Provides access to the underlying input action map instance.
+        /// </summary>
+        public InputActionMap Get() { return m_Wrapper.m_Torres; }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Enable()" />
+        public void Enable() { Get().Enable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Disable()" />
+        public void Disable() { Get().Disable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.enabled" />
+        public bool enabled => Get().enabled;
+        /// <summary>
+        /// Implicitly converts an <see ref="TorresActions" /> to an <see ref="InputActionMap" /> instance.
+        /// </summary>
+        public static implicit operator InputActionMap(TorresActions set) { return set.Get(); }
+        /// <summary>
+        /// Adds <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <param name="instance">Callback instance.</param>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c> or <paramref name="instance"/> have already been added this method does nothing.
+        /// </remarks>
+        /// <seealso cref="TorresActions" />
+        public void AddCallbacks(ITorresActions instance)
+        {
+            if (instance == null || m_Wrapper.m_TorresActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_TorresActionsCallbackInterfaces.Add(instance);
+            @Gerar.started += instance.OnGerar;
+            @Gerar.performed += instance.OnGerar;
+            @Gerar.canceled += instance.OnGerar;
+        }
+
+        /// <summary>
+        /// Removes <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <remarks>
+        /// Calling this method when <paramref name="instance" /> have not previously been registered has no side-effects.
+        /// </remarks>
+        /// <seealso cref="TorresActions" />
+        private void UnregisterCallbacks(ITorresActions instance)
+        {
+            @Gerar.started -= instance.OnGerar;
+            @Gerar.performed -= instance.OnGerar;
+            @Gerar.canceled -= instance.OnGerar;
+        }
+
+        /// <summary>
+        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="TorresActions.UnregisterCallbacks(ITorresActions)" />.
+        /// </summary>
+        /// <seealso cref="TorresActions.UnregisterCallbacks(ITorresActions)" />
+        public void RemoveCallbacks(ITorresActions instance)
+        {
+            if (m_Wrapper.m_TorresActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        /// <summary>
+        /// Replaces all existing callback instances and previously registered input action callbacks associated with them with callbacks provided via <param cref="instance" />.
+        /// </summary>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c>, calling this method will only unregister all existing callbacks but not register any new callbacks.
+        /// </remarks>
+        /// <seealso cref="TorresActions.AddCallbacks(ITorresActions)" />
+        /// <seealso cref="TorresActions.RemoveCallbacks(ITorresActions)" />
+        /// <seealso cref="TorresActions.UnregisterCallbacks(ITorresActions)" />
+        public void SetCallbacks(ITorresActions instance)
+        {
+            foreach (var item in m_Wrapper.m_TorresActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_TorresActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    /// <summary>
+    /// Provides a new <see cref="TorresActions" /> instance referencing this action map.
+    /// </summary>
+    public TorresActions @Torres => new TorresActions(this);
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Valdrek" which allows adding and removing callbacks.
     /// </summary>
@@ -391,5 +519,20 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnFire(InputAction.CallbackContext context);
+    }
+    /// <summary>
+    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Torres" which allows adding and removing callbacks.
+    /// </summary>
+    /// <seealso cref="TorresActions.AddCallbacks(ITorresActions)" />
+    /// <seealso cref="TorresActions.RemoveCallbacks(ITorresActions)" />
+    public interface ITorresActions
+    {
+        /// <summary>
+        /// Method invoked when associated input action "Gerar" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnGerar(InputAction.CallbackContext context);
     }
 }

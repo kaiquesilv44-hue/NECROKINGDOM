@@ -10,6 +10,7 @@ public class TorreScript : MonoBehaviour
     public GameObject LocalTorreProjetil;
     public GameObject Slot;
     public LevelManagerScript Manager;
+    public Collider2D col;
     private bool Cooldown = true;
     private float MenorDistancia = math.INFINITY;
     public Transform Alvo;
@@ -19,8 +20,9 @@ public class TorreScript : MonoBehaviour
     private bool Posicionado = false;
     private bool PodeRemover = false;
     public LayerMask PontosDeTorre;
+    public int MagosNaArea = 0;
 
-    private List<Transform> Inimigos = new List<Transform> ();
+    public List<Transform> Inimigos = new List<Transform> ();
 
 
     private void Start()
@@ -30,6 +32,17 @@ public class TorreScript : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Vector2 mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+            if (Manager.Removido && col.OverlapPoint(mousepos))
+            {
+                Manager.Removido = false;
+                Destroy(gameObject);
+            }
+        }
+
         if (Posicionado)
         {
             PodeRemover = true;
@@ -46,11 +59,14 @@ public class TorreScript : MonoBehaviour
                         Alvo = t;
                     }
                 }
+                StartCoroutine(cooldown());
+                Cooldown = false;
+                if (MagosNaArea >= 1)
+                    return;
                 GameObject proj = Instantiate(TorreProjetil, LocalTorreProjetil.transform.position, LocalTorreProjetil.transform.rotation);
                 proj.GetComponent<TorreProjetilScript>().Alvo = Alvo;
                 proj.GetComponent<TorreProjetilScript>().Dano = Dano;
-                Cooldown = false;
-                StartCoroutine(cooldown());
+               
             }
         }
         
@@ -89,9 +105,22 @@ public class TorreScript : MonoBehaviour
         }
     }
 
+    public bool EstaNaListaDeInimigos(Transform alvo)
+    {
+        return Inimigos.Contains(alvo);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Inimigo"))
+        {
+            Inimigos.Add(collision.transform);
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (!EstaNaListaDeInimigos(collision.transform) && collision.gameObject.CompareTag("Inimigo"))
         {
             Inimigos.Add(collision.transform);
         }
@@ -105,15 +134,6 @@ public class TorreScript : MonoBehaviour
         }
     }
 
-    private void OnMouseDown()
-    {
-        if (Manager.Removido)
-        {
-            Manager.Removido = false;
-            Destroy(gameObject);
-        }
-    }
-
     IEnumerator cooldown()
     {
         yield return new WaitForSeconds(CoolDown);
@@ -123,7 +143,7 @@ public class TorreScript : MonoBehaviour
     private void OnDestroy()
     {
         Manager.Almas += Custo;
-        if (PodeRemover)
+        if (PodeRemover && gameObject.scene.isLoaded)
         {
             GameObject NovoSlot = Instantiate(Slot, transform.position, Quaternion.identity);
             Manager.SlotDeTorre.Add(NovoSlot);

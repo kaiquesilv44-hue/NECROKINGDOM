@@ -51,6 +51,7 @@ public class InimigoSpawner : MonoBehaviour
     public List<Onda3> InimigosOnda3;
     public List<OndaBoss> InimigosOndaBoss;
 
+
     void Start()
     {
         StartCoroutine(temporizador());
@@ -134,21 +135,19 @@ public class InimigoSpawner : MonoBehaviour
 
    public IEnumerator TempoEntreOndas()
     {
+        StartCoroutine(temporizador());
         yield return new WaitForSeconds(tempoEntreOndas);
 
         switch(FindAnyObjectByType<LevelManagerScript>().BarraAtual)
         {
             case 0.25f:
                 StartCoroutine(SpawnarOnda2());
-                StartCoroutine(temporizador());
                 break;
             case 0.5f:
                 StartCoroutine(SpawnarOnda3());
-                StartCoroutine(temporizador());
                 break;
             case 0.75f:
                 StartCoroutine(SpawnarOndaBoss());
-                StartCoroutine(temporizador());
                 break;
         }
     }
