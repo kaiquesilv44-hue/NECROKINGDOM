@@ -1,0 +1,827 @@
+fileFormatVersion: 2
+guid: 90497d333878e4442b5e477866777972
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5167326601578895169
+    second: "Bot\xF5es Necrokingdom_0"
+  - first:
+      213: -1845490937678331446
+    second: "Bot\xF5es Necrokingdom_1"
+  - first:
+      213: 639493847085656669
+    second: "Bot\xF5es Necrokingdom_2"
+  - first:
+      213: 4719771075399823727
+    second: "Bot\xF5es Necrokingdom_3"
+  - first:
+      213: -3775519632222040
+    second: "Bot\xF5es Necrokingdom_4"
+  - first:
+      213: 567150566161774793
+    second: "Bot\xF5es Necrokingdom_5"
+  - first:
+      213: -2636876074547300000
+    second: "Bot\xF5es Necrokingdom_6"
+  - first:
+      213: 3092984654843462329
+    second: "Bot\xF5es Necrokingdom_7"
+  - first:
+      213: -2651187091943268889
+    second: "Bot\xF5es Necrokingdom_8"
+  - first:
+      213: 8749334340457850744
+    second: "Bot\xF5es Necrokingdom_9"
+  - first:
+      213: 2489282138399192916
+    second: "Bot\xF5es Necrokingdom_10"
+  - first:
+      213: -4720385063444946273
+    second: "Bot\xF5es Necrokingdom_11"
+  - first:
+      213: -8085414973397226864
+    second: "Bot\xF5es Necrokingdom_12"
+  - first:
+      213: 8356578118726396232
+    second: "Bot\xF5es Necrokingdom_13"
+  - first:
+      213: -4712910773006188024
+    second: "Bot\xF5es Necrokingdom_14"
+  - first:
+      213: 8683050828966851369
+    second: "Bot\xF5es Necrokingdom_15"
+  - first:
+      213: -5458681056314485404
+    second: "Bot\xF5es Necrokingdom_16"
+  - first:
+      213: 1120970413952339144
+    second: "Bot\xF5es Necrokingdom_17"
+  - first:
+      213: -3192656022390668070
+    second: "Bot\xF5es Necrokingdom_18"
+  - first:
+      213: -7991866553512093706
+    second: "Bot\xF5es Necrokingdom_19"
+  - first:
+      213: -4794385874005482999
+    second: "Bot\xF5es Necrokingdom_20"
+  - first:
+      213: 9051016269895661237
+    second: "Bot\xF5es Necrokingdom_21"
+  - first:
+      213: 1347219852869212346
+    second: "Bot\xF5es Necrokingdom_22"
+  - first:
+      213: -3052265822554345624
+    second: "Bot\xF5es Necrokingdom_23"
+  - first:
+      213: -4112921818554038216
+    second: "Bot\xF5es Necrokingdom_24"
+  - first:
+      213: -1259184216306927786
+    second: "Bot\xF5es Necrokingdom_25"
+  - first:
+      213: 2925294365514937651
+    second: "Bot\xF5es Necrokingdom_26"
+  - first:
+      213: 4846621731372243048
+    second: "Bot\xF5es Necrokingdom_27"
+  - first:
+      213: -5439962499082408472
+    second: "Bot\xF5es Necrokingdom_28"
+  - first:
+      213: -388278790576083031
+    second: "Bot\xF5es Necrokingdom_29"
+  - first:
+      213: 9151579607717819646
+    second: "Bot\xF5es Necrokingdom_30"
+  - first:
+      213: -8990364728616751475
+    second: "Bot\xF5es Necrokingdom_31"
+  - first:
+      213: -5601571163178418707
+    second: "Bot\xF5es Necrokingdom_32"
+  - first:
+      213: -2801648140105234797
+    second: "Bot\xF5es Necrokingdom_33"
+  - first:
+      213: 6517599047633004993
+    second: "Bot\xF5es Necrokingdom_34"
+  - first:
+      213: -70950592290027897
+    second: "Bot\xF5es Necrokingdom_35"
+  - first:
+      213: 4001327276483069773
+    second: "Bot\xF5es Necrokingdom_36"
+  - first:
+      213: -1806161099282976987
+    second: "Bot\xF5es Necrokingdom_37"
+  - first:
+      213: -7652119707428478004
+    second: "Bot\xF5es Necrokingdom_38"
+  - first:
+      213: 7653756283905337848
+    second: "Bot\xF5es Necrokingdom_39"
+  - first:
+      213: -6309914995803566067
+    second: "Bot\xF5es Necrokingdom_40"
+  - first:
+      213: -1827479493648355956
+    second: "Bot\xF5es Necrokingdom_41"
+  - first:
+      213: -6091353743862463740
+    second: "Bot\xF5es Necrokingdom_42"
+  - first:
+      213: 4113713079039914794
+    second: "Bot\xF5es Necrokingdom_43"
+  - first:
+      213: 1185710518117989487
+    second: "Bot\xF5es Necrokingdom_44"
+  - first:
+      213: -4828452919855630556
+    second: "Bot\xF5es Necrokingdom_45"
+  - first:
+      213: 131176220077243299
+    second: "Bot\xF5es Necrokingdom_46"
+  - first:
+      213: 1712742986720352646
+    second: "Bot\xF5es Necrokingdom_47"
+  - first:
+      213: -2075527585981983470
+    second: "Bot\xF5es Necrokingdom_48"
+  - first:
+      213: -5031324498613160078
+    second: "Bot\xF5es Necrokingdom_49"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Bot\xF5es Necrokingdom_1"
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1809
+        width: 656
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac10b7f15cf7366e0800000000000000
+      internalID: -1845490937678331446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xF5es Necrokingdom_3"
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1809
+        width: 656
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f61be5269ceff7140800000000000000
+      internalID: 4719771075399823727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xF5es Necrokingdom_5"
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 1809
+        width: 656
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c8fb3e5f6ceed700800000000000000
+      internalID: 567150566161774793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xF5es Necrokingdom_7"
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1581
+        width: 656
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b2cdaff72d7cea20800000000000000
+      internalID: 3092984654843462329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xF5es Necrokingdom_9"
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1583
+        width: 656
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877ed180a31eb6970800000000000000
+      internalID: 8749334340457850744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xF5es Necrokingdom_11"
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1583
+        width: 656
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f92ed426bc2dd7eb0800000000000000
+      internalID: -4720385063444946273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xF5es Necrokingdom_13"
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1355
+        width: 656
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8492d70268788f370800000000000000
+      internalID: 8356578118726396232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xF5es Necrokingdom_14"
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 1355
+        width: 288
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 802cadc3f90689eb0800000000000000
+      internalID: -4712910773006188024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xF5es Necrokingdom_17"
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 1355
+        width: 291
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cc0a5ff6ac7e8f00800000000000000
+      internalID: 1120970413952339144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xF5es Necrokingdom_20"
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 1283
+        width: 552
+        height: 271
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 902a0c7037be67db0800000000000000
+      internalID: -4794385874005482999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xF5es Necrokingdom_22"
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1129
+        width: 656
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab89f9c715942b210800000000000000
+      internalID: 1347219852869212346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xF5es Necrokingdom_23"
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 1132
+        width: 288
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86f259ee76c24a5d0800000000000000
+      internalID: -3052265822554345624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xF5es Necrokingdom_26"
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 1095
+        width: 288
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33538fff9bbb89820800000000000000
+      internalID: 2925294365514937651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xF5es Necrokingdom_29"
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 1000
+        width: 551
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9afe4e54f7e8c9af0800000000000000
+      internalID: -388278790576083031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xF5es Necrokingdom_31"
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 903
+        width: 656
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8ee89d89eecb3380800000000000000
+      internalID: -8990364728616751475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xF5es Necrokingdom_32"
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 903
+        width: 288
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dedbdaa94b83342b0800000000000000
+      internalID: -5601571163178418707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xF5es Necrokingdom_36"
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 677
+        width: 656
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d47cad045f1978730800000000000000
+      internalID: 4001327276483069773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xF5es Necrokingdom_37"
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 646
+        width: 287
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52feb16bc0a3fe6e0800000000000000
+      internalID: -1806161099282976987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xF5es Necrokingdom_41"
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 451
+        width: 656
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d67ca351d73a6e0800000000000000
+      internalID: -1827479493648355956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xF5es Necrokingdom_43"
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 454
+        width: 262
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a237d000048d61930800000000000000
+      internalID: 4113713079039914794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xF5es Necrokingdom_46"
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 225
+        width: 656
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3abbea0c31802d100800000000000000
+      internalID: 131176220077243299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xF5es Necrokingdom_47"
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 225
+        width: 308
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68912030ca2e4c710800000000000000
+      internalID: 1712742986720352646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: da799825dc683314cb772ca8171813e7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Bot\xF5es Necrokingdom_0": -5167326601578895169
+      "Bot\xF5es Necrokingdom_1": -1845490937678331446
+      "Bot\xF5es Necrokingdom_10": 2489282138399192916
+      "Bot\xF5es Necrokingdom_11": -4720385063444946273
+      "Bot\xF5es Necrokingdom_12": -8085414973397226864
+      "Bot\xF5es Necrokingdom_13": 8356578118726396232
+      "Bot\xF5es Necrokingdom_14": -4712910773006188024
+      "Bot\xF5es Necrokingdom_15": 8683050828966851369
+      "Bot\xF5es Necrokingdom_16": -5458681056314485404
+      "Bot\xF5es Necrokingdom_17": 1120970413952339144
+      "Bot\xF5es Necrokingdom_18": -3192656022390668070
+      "Bot\xF5es Necrokingdom_19": -7991866553512093706
+      "Bot\xF5es Necrokingdom_2": 639493847085656669
+      "Bot\xF5es Necrokingdom_20": -4794385874005482999
+      "Bot\xF5es Necrokingdom_21": 9051016269895661237
+      "Bot\xF5es Necrokingdom_22": 1347219852869212346
+      "Bot\xF5es Necrokingdom_23": -3052265822554345624
+      "Bot\xF5es Necrokingdom_24": -4112921818554038216
+      "Bot\xF5es Necrokingdom_25": -1259184216306927786
+      "Bot\xF5es Necrokingdom_26": 2925294365514937651
+      "Bot\xF5es Necrokingdom_27": 4846621731372243048
+      "Bot\xF5es Necrokingdom_28": -5439962499082408472
+      "Bot\xF5es Necrokingdom_29": -388278790576083031
+      "Bot\xF5es Necrokingdom_3": 4719771075399823727
+      "Bot\xF5es Necrokingdom_30": 9151579607717819646
+      "Bot\xF5es Necrokingdom_31": -8990364728616751475
+      "Bot\xF5es Necrokingdom_32": -5601571163178418707
+      "Bot\xF5es Necrokingdom_33": -2801648140105234797
+      "Bot\xF5es Necrokingdom_34": 6517599047633004993
+      "Bot\xF5es Necrokingdom_35": -70950592290027897
+      "Bot\xF5es Necrokingdom_36": 4001327276483069773
+      "Bot\xF5es Necrokingdom_37": -1806161099282976987
+      "Bot\xF5es Necrokingdom_38": -7652119707428478004
+      "Bot\xF5es Necrokingdom_39": 7653756283905337848
+      "Bot\xF5es Necrokingdom_4": -3775519632222040
+      "Bot\xF5es Necrokingdom_40": -6309914995803566067
+      "Bot\xF5es Necrokingdom_41": -1827479493648355956
+      "Bot\xF5es Necrokingdom_42": -6091353743862463740
+      "Bot\xF5es Necrokingdom_43": 4113713079039914794
+      "Bot\xF5es Necrokingdom_44": 1185710518117989487
+      "Bot\xF5es Necrokingdom_45": -4828452919855630556
+      "Bot\xF5es Necrokingdom_46": 131176220077243299
+      "Bot\xF5es Necrokingdom_47": 1712742986720352646
+      "Bot\xF5es Necrokingdom_48": -2075527585981983470
+      "Bot\xF5es Necrokingdom_49": -5031324498613160078
+      "Bot\xF5es Necrokingdom_5": 567150566161774793
+      "Bot\xF5es Necrokingdom_6": -2636876074547300000
+      "Bot\xF5es Necrokingdom_7": 3092984654843462329
+      "Bot\xF5es Necrokingdom_8": -2651187091943268889
+      "Bot\xF5es Necrokingdom_9": 8749334340457850744
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

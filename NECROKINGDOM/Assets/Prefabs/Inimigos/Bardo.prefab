@@ -280,7 +280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CaminhoInimigo
   caminho: []
   velocidade: 3
-  Vida: 10
+  Vida: 14
   Escudo: 2
   Almas: 2
   NomeInimigo: Bardo

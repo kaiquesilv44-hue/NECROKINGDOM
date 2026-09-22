@@ -7,6 +7,11 @@ using UnityEngine.UI;
 
 public class LevelManagerScript : MonoBehaviour
 {
+    public bool onda1 = true;
+    public bool onda2 = false;
+    public bool onda3 = false;
+    public bool onda4 = false;
+
     public Image BarraDeOnda;
     public float BarraAtual = 0f;
     public TextMeshProUGUI VidaText;
@@ -20,6 +25,9 @@ public class LevelManagerScript : MonoBehaviour
     public GameObject MenuDerrota;
     public bool Removido = false;
     public bool Posicionando = false;
+    public Button Bt2X;
+    public Sprite Btpressionado;
+    public Sprite Btoriginal;
     public List<GameObject> SlotDeTorre = new List<GameObject>();
     public List<GameObject> SlotDeArmadilha = new List<GameObject>();
 
@@ -43,6 +51,11 @@ public class LevelManagerScript : MonoBehaviour
 
     private void Update()
     {
+        if (Time.timeScale == 2)
+            Bt2X.image.sprite = Btpressionado;
+        else
+            Bt2X.image.sprite = Btoriginal;
+        
         SlotDeTorre.RemoveAll(slot => slot == null);
         SlotDeArmadilha.RemoveAll(slot => slot == null);
         if (Posicionando)

@@ -18,11 +18,17 @@ public class CaminhoInimigo : MonoBehaviour
     public int Almas = 5;
     public string NomeInimigo;
     public GameObject Particulas;
+    public bool onda1 = true;
+    public bool onda2 = false;
+    public bool onda3 = false;
+    public bool onda4 = false;
 
     public float Incremento;
+    private SpriteRenderer[] srs;
 
     void Start()
     {
+        srs = GetComponentsInChildren<SpriteRenderer>();
         Manager = FindAnyObjectByType<LevelManagerScript>();
         Spawner = FindAnyObjectByType<InimigoSpawner>();
         sr = GetComponent<SpriteRenderer>();
@@ -127,22 +133,32 @@ public class CaminhoInimigo : MonoBehaviour
     }
 
     IEnumerator ladino()
+{
+    TorreScript[] todasTorres = FindObjectsByType<TorreScript>(FindObjectsSortMode.None);
+    foreach (TorreScript torre in todasTorres)
     {
-        TorreScript[] todasTorres = FindObjectsByType<TorreScript>(FindObjectsSortMode.None);
-        foreach (TorreScript torre in todasTorres)
-        {
-            if (torre.EstaNaListaDeInimigos(gameObject.transform))
-                torre.Inimigos.Remove(gameObject.transform);
-        }
-        gameObject.tag = "Ladino";
-        float dano = 0.5f;
-        Color corOriginal = sr.color;
-        Color Dano = new Color(corOriginal.r, corOriginal.g, corOriginal.b, dano);
-        sr.color = Dano;
-        yield return new WaitForSeconds(4f);
-        sr.color = corOriginal;
-        gameObject.tag = "Inimigo";
+        if (torre.EstaNaListaDeInimigos(gameObject.transform))
+            torre.Inimigos.Remove(gameObject.transform);
     }
+    gameObject.tag = "Ladino";
+    float dano = 0.5f;
+
+    Color[] coresOriginais = new Color[srs.Length];
+    for (int i = 0; i < srs.Length; i++)
+    {
+        coresOriginais[i] = srs[i].color;
+        srs[i].color = new Color(coresOriginais[i].r, coresOriginais[i].g, coresOriginais[i].b, dano);
+    }
+
+    yield return new WaitForSeconds(4f);
+
+    for (int i = 0; i < srs.Length; i++)
+    {
+        srs[i].color = coresOriginais[i];
+    }
+
+    gameObject.tag = "Inimigo";
+}
 
 
 
@@ -155,22 +171,28 @@ public class CaminhoInimigo : MonoBehaviour
 
             Manager.BarraAtual += Incremento;
             Manager.Almas += Almas;
-            if (Manager.BarraAtual >= 0.249 && Manager.BarraAtual <= 0.250001)
+            if (Manager.BarraAtual >= 0.248f && Manager.onda1)
             {
                 Manager.BarraAtual = 0.25f;
                 Spawner.StartCoroutine(Spawner.TempoEntreOndas());
+                Manager.onda2 = true;
+                Manager.onda1 = false;
             }
-            if (Manager.BarraAtual >= 0.499 && Manager.BarraAtual <= 0.50001)
+            if (Manager.BarraAtual >= 0.498f && Manager.onda2)
             {
                 Manager.BarraAtual = 0.5f;
                 Spawner.StartCoroutine(Spawner.TempoEntreOndas());
+                Manager.onda3 = true;
+                Manager.onda2 = false;
             }
-            if (Manager.BarraAtual >= 0.749 && Manager.BarraAtual <= 0.750001)
+            if (Manager.BarraAtual >= 0.748f && Manager.onda3)
             {
                 Manager.BarraAtual = 0.75f;
                 Spawner.StartCoroutine(Spawner.TempoEntreOndas());
+                Manager.onda4 = true;
+                Manager.onda3 = false;
             }
-            if (Manager.BarraAtual >= 0.999 && Manager.BarraAtual <= 1.00001)
+            if (Manager.BarraAtual >= 0.998f && Manager.onda4)
             {
                 Manager.BarraAtual = 1f;
             }
@@ -179,11 +201,17 @@ public class CaminhoInimigo : MonoBehaviour
 
     IEnumerator Receberdano()
     {
-        if (NomeInimigo != "Ladino") 
-        { 
-          sr.color = Color.red;
+        if (NomeInimigo != "Ladino")
+        {
+            foreach (SpriteRenderer sr in srs)
+            {
+                sr.color = Color.red;
+            }
           yield return new WaitForSeconds(0.1f);
-          sr.color = Color.white;
+            foreach (SpriteRenderer sr in srs)
+            {
+                sr.color = Color.white;
+            }
         }
     }
 }

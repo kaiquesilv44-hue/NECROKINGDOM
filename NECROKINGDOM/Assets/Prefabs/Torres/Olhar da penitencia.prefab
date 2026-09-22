@@ -56,8 +56,8 @@ MonoBehaviour:
   Manager: {fileID: 0}
   col: {fileID: 6464464070780291004}
   Alvo: {fileID: 0}
-  CoolDown: 3
-  Dano: 16
+  CoolDown: 2.8
+  Dano: 14
   Custo: 30
   PontosDeTorre:
     serializedVersion: 2

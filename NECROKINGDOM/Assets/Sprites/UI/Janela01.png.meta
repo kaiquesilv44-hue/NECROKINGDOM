@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 2daecf24728fad344b1434b086c3bd6a
+guid: a76adaaa91f63ff42abc48735b18d53c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2478082461863041852
-    second: Trono_0
+      213: -3019935855362352534
+    second: Janela01_0
+  - first:
+      213: -7891585415943082197
+    second: Janela01_1
+  - first:
+      213: -2430669345765838494
+    second: Janela01_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,7 +78,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -126,13 +132,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Trono_0
+      name: Janela01_0
       rect:
         serializedVersion: 2
-        x: 327
-        y: 59
-        width: 769
-        height: 1052
+        x: 0
+        y: 44
+        width: 1671
+        height: 883
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +147,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c3bd87f9edae36220800000000000000
-      internalID: 2478082461863041852
+      spriteID: a6a59a007580716d0800000000000000
+      internalID: -3019935855362352534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Janela01_1
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 21
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2f2f0820e47b7290800000000000000
+      internalID: -7891585415943082197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Janela01_2
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 29
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2613237bb17844ed0800000000000000
+      internalID: -2430669345765838494
       vertices: []
       indices: 
       edges: []
@@ -151,7 +201,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +211,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Trono_0: 2478082461863041852
+      Janela01_0: -3019935855362352534
+      Janela01_1: -7891585415943082197
+      Janela01_2: -2430669345765838494
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
