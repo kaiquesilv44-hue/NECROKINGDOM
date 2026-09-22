@@ -17,6 +17,9 @@ public class TorreProjetilScript : MonoBehaviour
         {
             Vector3 direction = (Alvo.position - transform.position).normalized;
             transform.Translate(direction * Velocidade * Time.deltaTime, Space.World);
+            float angulo = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0, 0, angulo);
+            
         }
         else
         {

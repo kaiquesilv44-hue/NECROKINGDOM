@@ -39,6 +39,7 @@ public class OndaBoss
 
 public class InimigoSpawner : MonoBehaviour
 {
+    AudioSource ad;
     public int QuantidadeInimigosOnda1;
     public int QuantidadeInimigosOnda2;
     public int QuantidadeInimigosOnda3;
@@ -50,10 +51,12 @@ public class InimigoSpawner : MonoBehaviour
     public List<Onda2> InimigosOnda2;
     public List<Onda3> InimigosOnda3;
     public List<OndaBoss> InimigosOndaBoss;
+    
 
 
     void Start()
     {
+        ad = GetComponent<AudioSource>();
         StartCoroutine(temporizador());
     }
 
@@ -157,6 +160,8 @@ public class InimigoSpawner : MonoBehaviour
         Temporizador.gameObject.SetActive(true);
         for (int i = 15; i >= 0; i--)
         {
+            if (i == 3)
+            ad.Play();
             Temporizador.text = "Inimigos Chegarão em: " + i.ToString();
             yield return new WaitForSeconds(1f);
         }

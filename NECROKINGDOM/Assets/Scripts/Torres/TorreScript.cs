@@ -21,12 +21,14 @@ public class TorreScript : MonoBehaviour
     private bool PodeRemover = false;
     public LayerMask PontosDeTorre;
     public int MagosNaArea = 0;
+    AudioSource ad;
 
     public List<Transform> Inimigos = new List<Transform> ();
 
 
     private void Start()
     {
+        ad = GetComponent<AudioSource>();
         Manager = FindAnyObjectByType<LevelManagerScript> ();
     }
 
@@ -63,6 +65,7 @@ public class TorreScript : MonoBehaviour
                 Cooldown = false;
                 if (MagosNaArea >= 1)
                     return;
+                ad.Play();
                 GameObject proj = Instantiate(TorreProjetil, LocalTorreProjetil.transform.position, LocalTorreProjetil.transform.rotation);
                 proj.GetComponent<TorreProjetilScript>().Alvo = Alvo;
                 proj.GetComponent<TorreProjetilScript>().Dano = Dano;

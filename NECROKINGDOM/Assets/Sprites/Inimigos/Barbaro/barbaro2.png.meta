@@ -1,0 +1,313 @@
+fileFormatVersion: 2
+guid: 4b5e4157aa34e5642bc75d50f399159d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1599936524114259809
+    second: barbaro2_0
+  - first:
+      213: -1587145689108355670
+    second: barbaro2_1
+  - first:
+      213: -875905884238156313
+    second: barbaro2_2
+  - first:
+      213: 6866763067592626114
+    second: barbaro2_3
+  - first:
+      213: -5738273951784481187
+    second: barbaro2_4
+  - first:
+      213: 946861793936373964
+    second: barbaro2_5
+  - first:
+      213: -7953084220199773023
+    second: barbaro2_6
+  - first:
+      213: -137714165250632320
+    second: barbaro2_7
+  - first:
+      213: -6984389421580850330
+    second: barbaro2_8
+  - first:
+      213: -832193699495043102
+    second: barbaro2_9
+  - first:
+      213: 6756487006084047793
+    second: barbaro2_10
+  - first:
+      213: 8838711648141101713
+    second: barbaro2_11
+  - first:
+      213: 8319691428451346737
+    second: barbaro2_12
+  - first:
+      213: -7291820947100400997
+    second: barbaro2_13
+  - first:
+      213: 4868266777117914003
+    second: barbaro2_14
+  - first:
+      213: 538936235327587252
+    second: barbaro2_15
+  - first:
+      213: -464330142877570055
+    second: barbaro2_16
+  - first:
+      213: -6222283801614034326
+    second: barbaro2_17
+  - first:
+      213: -232231793557337487
+    second: barbaro2_18
+  - first:
+      213: 5825933032562420592
+    second: barbaro2_19
+  - first:
+      213: -8810186681489277199
+    second: barbaro2_20
+  - first:
+      213: -5660043701291539856
+    second: barbaro2_21
+  - first:
+      213: 6842000100873583517
+    second: barbaro2_22
+  - first:
+      213: -982023331158618052
+    second: barbaro2_23
+  - first:
+      213: 8237917215912872867
+    second: barbaro2_24
+  - first:
+      213: 7400928516688263841
+    second: barbaro2_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: barbaro2_0
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 586
+        width: 304
+        height: 406
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16fe007bacd143610800000000000000
+      internalID: 1599936524114259809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbaro2_1
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 586
+        width: 260
+        height: 406
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa567e1a76359f9e0800000000000000
+      internalID: -1587145689108355670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbaro2_4
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 586
+        width: 260
+        height: 406
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5e42085e3e8d50b0800000000000000
+      internalID: -5738273951784481187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a6c687197b2eca64980ee95cf0fef4b5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      barbaro2_0: 1599936524114259809
+      barbaro2_1: -1587145689108355670
+      barbaro2_10: 6756487006084047793
+      barbaro2_11: 8838711648141101713
+      barbaro2_12: 8319691428451346737
+      barbaro2_13: -7291820947100400997
+      barbaro2_14: 4868266777117914003
+      barbaro2_15: 538936235327587252
+      barbaro2_16: -464330142877570055
+      barbaro2_17: -6222283801614034326
+      barbaro2_18: -232231793557337487
+      barbaro2_19: 5825933032562420592
+      barbaro2_2: -875905884238156313
+      barbaro2_20: -8810186681489277199
+      barbaro2_21: -5660043701291539856
+      barbaro2_22: 6842000100873583517
+      barbaro2_23: -982023331158618052
+      barbaro2_24: 8237917215912872867
+      barbaro2_25: 7400928516688263841
+      barbaro2_3: 6866763067592626114
+      barbaro2_4: -5738273951784481187
+      barbaro2_5: 946861793936373964
+      barbaro2_6: -7953084220199773023
+      barbaro2_7: -137714165250632320
+      barbaro2_8: -6984389421580850330
+      barbaro2_9: -832193699495043102
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

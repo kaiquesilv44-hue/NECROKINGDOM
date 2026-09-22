@@ -9,7 +9,7 @@ public class ValdrekScript : MonoBehaviour
 {
     public GameObject Projetil;
     public GameObject LocalProjetil;
-    public float speed = 5f;
+    public float speed = 3.8f;
     private Vector2 moveInput;
     private bool EstaNaUi = false;
     private bool canFire = true;

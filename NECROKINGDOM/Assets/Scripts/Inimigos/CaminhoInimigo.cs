@@ -116,8 +116,8 @@ public class CaminhoInimigo : MonoBehaviour
     {
         if (Vida <= 8)
         {
-            velocidade = 6.5f;
-            Escudo = 1f;
+            velocidade = 5.4f;
+            Escudo = 4f;
         }
     }
 
@@ -148,7 +148,7 @@ public class CaminhoInimigo : MonoBehaviour
 
     private void OnDestroy()
     {
-        if (Manager != null)
+        if (Manager != null && gameObject.scene.isLoaded)
         {
             if (gameObject.scene.isLoaded)
                 Instantiate(Particulas, transform.position, Quaternion.identity);
